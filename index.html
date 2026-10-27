@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For You ♡</title>
+<style>
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;color:#7b3554;background:linear-gradient(135deg,#ffd9e8,#fff1f7,#ffc8df);min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(#fff 1.5px,transparent 1.5px);background-size:24px 24px;opacity:.5}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:22px;position:relative;z-index:2}
+.card{width:min(92vw,470px);background:rgba(255,255,255,.78);border:2px solid #fff;border-radius:32px;padding:30px 22px;text-align:center;box-shadow:0 18px 60px #d95b8c35;backdrop-filter:blur(12px)}
+.bow{font-size:42px;animation:bob 2s ease-in-out infinite} h1{color:#d94d86;margin:8px 0} .hint{opacity:.72}
+input{width:100%;padding:15px;border:2px solid #f7a7c7;border-radius:18px;outline:none;text-align:center;font-size:20px;color:#c93e79;background:#fff}
+button{margin-top:14px;border:0;border-radius:18px;padding:14px 24px;background:#ef6fa2;color:#fff;font-weight:700;font-size:17px;box-shadow:0 8px 20px #e65c943d;cursor:pointer}
+#error{min-height:24px;margin-top:10px;color:#cf3f6d}
+.hidden{display:none!important}
+#success{position:fixed;inset:0;z-index:20;background:linear-gradient(135deg,#ffcae0,#fff0f7);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.kitty{width:190px;height:155px;background:white;border:5px solid #6d4b58;border-radius:48% 48% 44% 44%;position:relative;margin:auto;box-shadow:0 15px 45px #dc5f9133}
+.ear{position:absolute;width:55px;height:55px;background:#fff;border:5px solid #6d4b58;top:-20px;transform:rotate(45deg);z-index:-1}.ear.l{left:13px}.ear.r{right:13px}
+.eye{position:absolute;width:9px;height:14px;background:#49333b;border-radius:50%;top:67px}.eye.l{left:48px}.eye.r{right:48px}
+.nose{position:absolute;width:14px;height:10px;background:#f0c343;border-radius:50%;left:50%;top:86px;transform:translateX(-50%)}
+.whisk{position:absolute;width:42px;height:2px;background:#6d4b58;top:92px}.w1{left:-24px;transform:rotate(8deg)}.w2{left:-24px;top:108px;transform:rotate(-8deg)}.w3{right:-24px;transform:rotate(-8deg)}.w4{right:-24px;top:108px;transform:rotate(8deg)}
+.kbow{position:absolute;right:-8px;top:12px;font-size:48px;transform:rotate(12deg)}
+.successText{font-size:28px;color:#d84c85;font-weight:800;margin-top:25px;animation:pop .6s both}
+#gift{display:none;position:relative;z-index:2;padding:60px 18px 90px}
+.letter{width:min(900px,94vw);margin:auto;background:rgba(255,255,255,.88);border:2px solid #fff;border-radius:30px;padding:clamp(22px,5vw,48px);box-shadow:0 20px 70px #d45a8d35;line-height:2.05;font-size:17px}
+.letter h2{text-align:center;color:#d94d86;font-size:30px}.letter p{margin:0 0 22px}
+.music{position:fixed;left:15px;bottom:15px;z-index:10;background:#fff;border-radius:999px;padding:10px 14px;box-shadow:0 8px 30px #b34d7733;font-size:14px}
+.heart{position:fixed;bottom:-40px;z-index:1;pointer-events:none;animation:floatUp linear infinite;opacity:.65}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(360deg);opacity:0}} @keyframes bob{50%{transform:translateY(-8px)}} @keyframes pop{from{opacity:0;transform:scale(.7)}to{opacity:1;transform:scale(1)}}
+@media(max-width:600px){.letter{font-size:15.5px;line-height:1.95}}
+</style>
+</head>
+<body>
+<section id="lock" class="screen">
+ <div class="card"><div class="bow">🎀</div><h1>هدية صغيرة ليكي ♡</h1><p class="hint">اكتبي الباسورد الأول</p>
+ <input id="pass" type="password" inputmode="numeric" placeholder="••••" maxlength="4">
+ <button id="open">افتحي الهدية 💗</button><div id="error"></div></div>
+</section>
+
+<section id="success" class="hidden"><div><div class="kitty"><i class="ear l"></i><i class="ear r"></i><i class="eye l"></i><i class="eye r"></i><i class="nose"></i><i class="whisk w1"></i><i class="whisk w2"></i><i class="whisk w3"></i><i class="whisk w4"></i><span class="kbow">🎀</span></div><div class="successText">صح براڤو عليكي يمزه 💗</div></div></section>
+
+<main id="gift"><article class="letter"><div style="text-align:center;font-size:42px">💌🎀</div><h2>رسالة ليكي من قلبي</h2><p>بصي يا حبيبتي ويا روح قلبي ويا أغلى وأحن وأجمل حاجة حصلتلي في حياتي، أنا عارف إني زعلتك ووجعت قلبك، وعارف إن اللي حصل خلاكي تحسي بمشاعر وحشة مكنتيش تستاهلي تحسي بيها بسببي، وعشان كده أنا جاي أقولك حقك عليا يا حبيبتي، حقك عليا من كل قلبي، أنا آسف على كل لحظة زعل عيشتيها بسببي، وآسف على كل دمعة نزلت من عيونك بسببي، وآسف إني خليتك في يوم تحسي إن فيه حاجة ممكن تكون أهم من مشاعرك أو إن ثقتك فيا ممكن تتجرح، والله يا حبيبتي ما كان قصدي أوجعك ولا أكون سبب في حزنك، أنا كنت عايز أعرف هي عايزة إيه وبعدين أحكيلك، لكن أنا فاهم إن اللي حصل زعلك وإنك كان نفسك تحسي إن مفيش حاجة ممكن تحصل من وراكي، وأنا مش هقولك إنك مكبرة الموضوع ولا هقلل من زعلك، لأن زعلك عندي مش حاجة بسيطة، ومشاعرك مش حاجة أقدر أعديها بكلمتين وخلاص، إنتِ حبيبتي، وإنتِ أكتر إنسانة المفروض أحافظ على قلبها وأطمنها وأخليها تحس إنها أغلى واحدة عندي في الدنيا.</p>
+<p>يا حبيبتي أنا مش عارف أوصفلك إنتِ غالية عندي قد إيه، ولا عارف أشرحلك إزاي فكرة إني أكون سبب في زعلك بتوجعني، أنا اللي نفسي أشوفك مبسوطة طول الوقت، ونفسي أكون الشخص اللي يهون عليكي الدنيا كلها، مش الشخص اللي يخلي الدنيا تضيق عليكي، نفسي أكون أمانك وراحتك وسندك، والشخص اللي لما تفكري فيه قلبك يطمن مش يزعل، ولما تتخيلي مستقبلك تلاقيني جنبك، ولما الدنيا تتعبك تلاقيني أول واحد واقف معاكي ومتمسك بيكي، مش عايز أكون مجرد شخص بيقولك بحبك، أنا عايز أكون الشخص اللي يثبتلك حبه كل يوم بأفعاله واهتمامه وخوفه على زعلك وحرصه على قلبك.</p>
+<p>أنا آسف يا حبيبتي إني خليتك توصلي لمرحلة تزعلي مني بالشكل ده، وآسف إني مكنتش واخد بالي كفاية من إن بعض التصرفات ممكن توجعك حتى لو أنا مكنش قصدي منها أي حاجة وحشة، وأنا مش بقولك الكلام ده عشان أرضيكي وخلاص، ولا عشان أخليكي تنسي اللي حصل بسرعة، أنا بقوله عشان فعلًا ندمان على زعلك، وعشان مشاعرك تهمني، وعشان آخر حاجة في الدنيا أتمناها هي إنك تحسي إنك لوحدك في علاقتنا أو إنك بتحبي حد مش حاسس بقيمة قلبك.</p>
+<p>إنتِ مش أي حد بالنسبالي يا حبيبتي، إنتِ الإنسانة اللي قلبي اختارها من وسط كل الناس، واللي نفسي أكمل معاها مشوار عمري، واللي لما بفكر في الأيام الجاية بتمنى تكون موجودة في كل تفاصيلها، نفسي أشاركك فرحتي ونجاحي وأيامي الحلوة والوحشة، ونفسي أفضل جنبك وإنتِ بتحققي كل أحلامك، وأفضل الشخص اللي يمسك إيدك ويقولك أنا معاكي ومش هسيبك تواجهِي الدنيا لوحدك، نفسي نكبر مع بعض ونفضل فاكرين إننا في يوم اخترنا بعض عن حب، وإننا مهما زعلنا من بعض نفضل نحاول عشان خاطر الحب اللي بينا، مش نسيب الزعل ياخدنا من بعض.</p>
+<p>عارفة يا حبيبتي إيه أكتر حاجة نفسي فيها؟ نفسي قلبك يطمنلي، نفسي لما أقولك بحبك تحسي إنك فعلًا محبوبة ومقدرة وغالية، نفسي ميبقاش فيه أي موقف يخلّيكي تشكي في مكانتك عندي، ونفسي أكون قد الثقة اللي بتديهالي، لأن ثقتك بالنسبالي مش حاجة عادية، دي مسؤولية كبيرة على قلبي، وأنا عايز أكون قدها، وعايزك تشوفي ده في معاملتي ليكي قبل كلامي.</p>
+<p>أنا عارف إن الاعتذار لوحده مش كفاية، وإن الكلام مهما كان حلو مش هيمسح الزعل في لحظة، وعشان كده أنا مش طالب منك تنسي كل حاجة مرة واحدة، أنا بس بطلب منك تسمحيلي أصلح اللي زعلك، وتديني الفرصة أوريكي إن كلامي مش مجرد حروف بكتبها عشان أصالحك، لكن إحساس حقيقي جوايا، وإن حبي ليكي أكبر من إني أسيب موقف يوجع قلبك ويخلّي بينا مسافة.</p>
+<p>ولو كان بإيدي أرجع للحظة اللي زعلتك فيها، كنت هتصرف بطريقة تانية تخليكي مطمنة ومش مضطرة تزعلي ولا تفكري كتير، بس أنا مقدرش أرجع الوقت، أقدر بس أتعلم من اللي حصل وأخلي اللي جاي أحسن، وأكون أوضح معاكي وأحرص على مشاعرك أكتر، وأثبتلك إنك مش محتاجة تتعبي قلبك عشان تعرفي إنتِ غالية عندي قد إيه.</p>
+<p>يا حبيبتي أنا بحبك حب مش عارف أوصفه، حب بيخليني أتمنى أشوفك أسعد واحدة في الدنيا، حب بيخليني أخاف على زعلك وأتمنى لو أقدر أشيل من قلبك أي حاجة توجعه، حب بيخليني كل ما أفكر في خسارتك أحس إن فيه حاجة كبيرة أوي ممكن تضيع مني، لأن وجودك في حياتي مش حاجة عادية أقدر أستغنى عنها بسهولة، إنتِ بالنسبالي حكاية نفسي متخلصش، وبيت نفسي أرجعله مهما الدنيا أخدتني، وراحة نفسي أفضل ألاقيها في وجودك، وحلم نفسي أشوفه بيكبر يوم بعد يوم لحد ما نبص لبعض ونفتكر كل حاجة عدينا بيها ونحمد ربنا إننا متمسكناش ببعض على الفاضي.</p>
+<p>أنا مش بوعدك إني هكون إنسان مبيغلطش أبدًا، لكن بوعدك إني أحاول أكون أحسن، وأتعلم من غلطاتي، ومخليش نفس الحاجة تتكرر وأنا عارف إنها بتوجعك، وأفضل أراعي قلبك وأحترم مشاعرك وأفكر في تأثير تصرفاتي عليكي، لأنك تستاهلي حب يطمنك، واهتمام يحسسك بقيمتك، وشخص يخاف على قلبك زي ما بيخاف على قلبه.</p>
+<p>حقك عليا يا حبيبتي، سامحيني على زعلك، وسامحيني لو خليتك تحسي للحظة إنك مش أولويتي، لأنك فعلًا غالية عندي بشكل أكبر من كل الكلام اللي ممكن أقوله، وأنا نفسي أرجع أشوف قلبك مرتاح معايا، ونفسي نبدأ صفحة جديدة مش معناها إننا نمسح اللي حصل ونتجاهله، لكن معناها إننا نتعلم منه ونبني بينا ثقة أقوى وحب أهدى وأجمل.</p>
+<p>ولو سألتيني أنا عايز إيه من الدنيا، هقولك إني عايز أيام كتير أعيشها وإنتِ جنبي، عايز ضحكات كتير تكوني إنتِ سببها، وذكريات حلوة نفضل نحكيها لبعض، وعمر طويل نفضل فيه نختار بعض كل يوم، مش عشان مفيش غيرنا في الدنيا، لكن عشان وسط كل الناس وكل الظروف نفضل شايفين إن وجودنا مع بعض يستاهل إننا نحافظ عليه.</p>
+<p>أنا بحبك يا حبيبتي، وبعتذرلك من أعمق مكان في قلبي، ومهما كتبتلك مش هعرف أوصل كل اللي جوايا، لكن أتمنى تحسي بصدق كلامي وتعرفي إن زعلك مش هين عليا، وإن قلبك مش حاجة أستهون بيها، وإن رجوعنا لبعض بالنسبالي فرصة غالية نفسي أحافظ عليها وأثبتلك إننا نقدر نكون أحسن من الأول.</p>
+<p>إنتِ حبيبتي وقطعة من قلبي وأجمل أمنية بدعي ربنا إنها تفضل في حياتي، وأنا مش عايز منك غير إنك تفضلي مطمنة وإنتِ معايا، وإننا نتكلم ونفهم بعض ونصلح أي حاجة تزعلنا بدل ما نخليها تكبر بينا، ونفضل نختار الحب حتى في الأوقات اللي بيكون فيها الزعل صعب.</p>
+<p>حقك عليا يا نور عيني، أنا آسف بجد، آسف على زعلك، وآسف على كل إحساس وحش وصلك بسببي، ونفسي أقدر أعوضك عن كل لحظة ضايقتك فيها بأيام تحسي فيها قد إيه إنتِ محبوبة وغالية، وأفضل كل يوم أثبتلك إن قلبي متمسك بيكي وإن وجودك في حياتي نعمة مش عايز أفرط فيها.</p>
+<p>بحبك يا أجمل حاجة في عمري، ويا حبيبتي اللي نفسي أفضل أشوفها في كل أحلامي وأيامي، ويا الإنسانة اللي قلبي بيتمنى تكون نصيبه في كل اللي جاي، وربنا يعلم إن كل اللي نفسي فيه إننا نفضل لبعض، ونعيش حب نكون فيه سند لبعض، ونفضل مهما عدت الأيام فاكرين إننا قدرنا نعدي الصعب عشان كان فيه بينا حب يستاهل، وإننا كل مرة بنرجع لبعض بنختار إننا نحافظ على حاجة غالية أوي على قلبينا.</p>
+<p>سامحيني يا حبيبتي، وخليني أثبتلك بالأفعال قبل الكلام إن اعتذاري حقيقي وإن حبي ليكي مش مجرد وعد، وإنك بالنسبة ليا مش مرحلة في حياتي، إنتِ الإنسانة اللي نفسي أكمل معاها حياتي كلها، وأفضل أحبها وأحافظ عليها وأختارها من بين كل الناس، لحد آخر يوم في عمري.</p><div style="text-align:center;font-size:34px">♡</div></article></main>
+<div id="music" class="music hidden">
+  <span>🎵 خليك معايا</span>
+  <button id="musicBtn" style="margin:0 0 0 8px;padding:7px 11px;font-size:13px;border-radius:999px">شغّلي الأغنية ♡</button>
+</div>
+
+
+<audio id="song" src="khalik-maaya.mp3" preload="auto" loop></audio>
+
+<script>
+const audio = document.getElementById('song');
+const pass = document.getElementById('pass');
+const btn = document.getElementById('open');
+const musicBtn = document.getElementById('musicBtn');
+
+audio.volume = 0.85;
+audio.loop = true;
+
+async function startMusic(){
+  try {
+    audio.muted = false;
+    await audio.play();
+    musicBtn.textContent = '⏸ وقفي الأغنية';
+    return true;
+  } catch(e) {
+    musicBtn.textContent = '▶ شغّلي الأغنية ♡';
+    return false;
+  }
+}
+
+function hearts(){
+  const chars=['♡','♥','🎀','✦'];
+  for(let i=0;i<18;i++){
+    const h=document.createElement('span');
+    h.className='heart';
+    h.textContent=chars[Math.floor(Math.random()*chars.length)];
+    h.style.left=Math.random()*100+'vw';
+    h.style.animationDuration=(7+Math.random()*9)+'s';
+    h.style.animationDelay=(-Math.random()*10)+'s';
+    h.style.fontSize=(15+Math.random()*18)+'px';
+    document.body.appendChild(h);
+  }
+}
+hearts();
+
+async function unlock(){
+  if(pass.value !== '1123'){
+    document.getElementById('error').textContent='الباسورد مش صح.. جربي تاني 🎀';
+    return;
+  }
+
+  // تشغيل الصوت مباشرة داخل نفس ضغطة المستخدم
+  await startMusic();
+
+  document.getElementById('error').textContent='';
+  document.getElementById('lock').classList.add('hidden');
+  const s=document.getElementById('success');
+  s.classList.remove('hidden');
+
+  setTimeout(()=>{
+    s.classList.add('hidden');
+    document.getElementById('gift').style.display='block';
+    document.getElementById('music').classList.remove('hidden');
+    window.scrollTo(0,0);
+  },2600);
+}
+
+btn.addEventListener('click', unlock);
+pass.addEventListener('keydown', e => {
+  if(e.key === 'Enter') unlock();
+});
+
+musicBtn.addEventListener('click', async ()=>{
+  if(audio.paused){
+    await startMusic();
+  } else {
+    audio.pause();
+    musicBtn.textContent='▶ شغّلي الأغنية ♡';
+  }
+});
+</script>
+
+</body></html>
